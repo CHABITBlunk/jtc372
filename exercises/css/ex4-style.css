@@ -1,0 +1,61 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("../images/page_bg.png");
+  background-repeat: repeat-x;
+}
+
+#wrapper {
+  width: 900px;
+  padding: 0.625em;
+  border: 2px solid #d5d4d2;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#banner {
+  display: flex;
+  border: 2px solid #3394cf;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+  padding: 0.625em;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  margin: auto;
+}
+
+nav p {
+  color: #867664;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#content {
+  display: flex;
+}
+
+aside {
+  background-color: #b1d6ed;
+  width: 30%;
+}
+
+aside p {
+  padding-left: 0.625em;
+}
+
+aside li {
+  list-style-type: none;
+}
+
+main {
+  width: 70%;
+  padding: 1em;
+}
