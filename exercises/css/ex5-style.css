@@ -1,0 +1,97 @@
+body {
+	background-color: #6699cc;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+}
+
+#wrapper {
+	width: 1200px;
+	background-color: white;
+}
+
+#topstripe {
+	font-family: "Open Sans", sans-serif;
+	background-color: navy;
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+nav {
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+	font-size: 1em;
+	background-color: navy;
+	color: white;
+	justify-content: space-around;
+	font-weight: bold;
+}
+
+#content {
+	display: flex;
+	background-color: white;
+	line-height: 0.625em;
+	font-family: "PT Serif", serif;
+}
+
+h3 {
+	line-height: 0.1em;
+}
+
+h4 {
+	line-height: 0.5em;
+}
+
+main {
+	text-align: center;
+}
+
+main em {
+	font-weight: bold;
+	color: #f49d05;
+}
+
+aside {
+	background-color: #ffffcc;
+	margin: 0 auto;
+	text-align: center;
+}
+
+aside img {
+	padding: 10px;
+}
+
+a {
+	color: indigo;
+}
+
+main p {
+	font-size: 0.85em;
+	text-align: left;
+	line-height: 1.25em;
+}
+
+#emaillist {
+	background-color: lightgray;
+}
+
+#emaillist p {
+	padding-top: 10px;
+	margin: 10px;
+	font-style: italic;
+	text-align: center;
+}
+
+button {
+	font-family: "PT Serif", serif;
+	background-color: navy;
+	color: white;
+	padding: 5px 40px;
+	margin-bottom: 15px;
+}
