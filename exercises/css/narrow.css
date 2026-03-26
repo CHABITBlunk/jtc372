@@ -1,0 +1,141 @@
+/*
+ nav {
+ 	display: none;
+ }
+*/
+
+/*
+ #mobile-nav {
+ 	display: block;
+ 	background: #006;
+ 	text-align: center;
+ }
+*/
+
+/*
+ .menu {
+ 	display: block;
+ 	width: 95%;
+ 	margin: 10px auto;
+ 	background: #f1f1f1;
+ }
+*/
+
+/* #content {flex-direction: column;} */
+
+/* main {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+} */
+
+/* #sidebar {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+} */
+
+/* Hamburger and X 	*/
+
+#mobile-nav label {
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	color: white;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#x {
+	display: none;
+}
+
+/* Styles for checkbox toggle */
+
+.menu {
+	display: none;
+}
+
+#mobile-nav input:checked ~ .menu {
+	display: block;
+}
+
+#mobile-nav input:checked ~ #burger {
+	display: none;
+}
+
+#mobile-nav input:checked ~ #x {
+	display: block;
+}
+
+/* Styles for hamburger menu */
+
+#burger {
+
+	background: none;
+	color: #fff;
+	border: none;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 2000;
+}
+
+#x {
+
+	background: none;
+	color: #fff;
+	border: none;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 2000;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#mobile button {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 3px;
+}
+
+.menu {
+	z-index: 1000;
+	font-weight: bold;
+	width: 95%;
+	background: #f1f1f1;
+	position: absolute;
+	text-align: center;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu li {
+	background: #ffffff;
+	padding: 15px 0;
+	border-bottom: #dddddd 1px solid;
+}
+
+.menu li:hover {
+	background: #ffffff;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #006;
+}
+
+.menu a:hover {
+	color: #666;
+}

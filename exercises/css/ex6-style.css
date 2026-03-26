@@ -1,3 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background-color: #98520c;
+	margin: 0;
+	background: #98520c;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background: #fff;
+	border-top: 15px solid #000;
+	border-bottom: 15px solid #000;
+}
+
+.header {
+	display: flex;
+	background: #fff;
+}
+
+.logos {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo_top {
+	margin: 0.3em auto 1.1em auto;
+}
+
+.logo_bar {
+	background: #000;
+	width: 100%;
+	padding: 0.02em 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo_bottom {
+	margin-right: 0.5em;
+}
+
+.mug {
+	width: 165px;
+	background: #fff;
+	display: flex;
+}
+
+.mug_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.content {
+	display: flex;
+	background: #fff;
+	background-image: url("../images/guitar.jpg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	min-height: 45em;
+}
+
+.nav {
+	width: 165px;
+	border-left: 1px solid #000;
+}
+
+.nav_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav_link {
+	display: block;
+	background: #d08c1e;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.6em 1em;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.main {
+	flex: 1;
+	background: #fff;
+}
+
+.quote {
+	background: #fff;
+	padding: 0.9em 1.1em;
+	font-style: italic;
+}
+
+.main_p {
+	margin: 1em 1.1em;
+	line-height: 1.35;
+}
+
+.rule {
+	border-top: 1px dotted #666;
+	margin: 0 1.1em;
+	height: 0;
+}
+
+.poster {
+	float: right;
+	width: 200px;
+	margin: 0.6em 1.1em 0.6em 0.8em;
+	border: 1px solid #000;
+}
+
+.main_head {
+	font-weight: 700;
+}
+
+.aside {
+	width: 210px;
+	background: #f6edc2;
+	padding: 1em;
+	font-size: 0.9em;
+}
+
+.aside_head,
+.aside_head2 {
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+.aside_date {
+	font-style: italic;
+	font-weight: 700;
+	margin-top: 0.8em;
+}
+
+.aside_p {
+	margin-bottom: 0.8em;
+}
+
+.aside_img {
+	width: 110px;
+	margin: 0.35em auto;
 }
