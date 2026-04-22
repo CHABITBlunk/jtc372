@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cyber Kill Chain educational website page about the cyber killchain.">
+  <title>The Cyber Kill Chain | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CKC</span>
+        <span class="brand-text">
+          <strong>Cyber Kill Chain</strong>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="recon.html">Recon</a>
+        <a href="weaponization.html">Weaponization</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="exploitation.html">Exploitation</a>
+        <a href="installation.html">Installation</a>
+        <a href="command-control.html">Command &amp; Control</a>
+        <a href="actions-on-objectives.html">Actions on Objectives</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="site-shell hero-shell">
+      <div class="hero-panel">
+        <h1>Learn the seven steps of the Cyber Kill Chain.</h1>
+        <p>This site explains the basics of the seven steps of the Cyber Kill Chain for
+          students and professionals new to the cybersecurity space.</p>
+        <div class="hero-actions">
+          <a class="button" href="recon.html">Start with Recon</a>
+        </div>
+      </div>
+
+      <aside class="hero-side-panel">
+        <div>
+          <h2>Cyber Kill Chain Overview</h2>
+          <p>An introductory glance at how attackers move from reconnaissance to exploitation to acting on objectives,
+            as well as how defenders can prevent attackers from reaching any harmful steps. Each page on this site
+            covers one stage of the cyber kill chain and explains attacker goals and defensive implications. Our goal is
+            to help readers understand attack progression so they can recognize, detect, and disrupt malicious activity.
+            We wrote this website for students, beginner penetration testers, and IT professionals transitioning into
+            security roles.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <div class="site-shell">
+
+      <section class="page-grid" aria-labelledby="site-overview-heading">
+        <article class="content-card">
+          <h3>An introduction to the basic steps of a cyberattack</h3>
+          <p>Many new to the field of cybersecurity think of recon, exploitation, and command and control as isolated
+            terms. This site organizes them into a coherent framework so readers can understand how each stage dovetails
+            into the next and how defenders can prevent attackers from reaching the next step.</p>
+          <img class="content-image" src="images/kill-chain-diagram.png"
+            alt="Cyber Kill Chain overview diagram showing the progression from recon to actions on objectives.">
+        </article>
+
+        <aside class="sidebar-card">
+          <h3>Target Audience and Design Inspiration</h3>
+          <p>This website's target audience is comprised of three main groups: undergraduate cybersecurity students,
+            those who are self-taught and interested in learning more about cybersecurity, and professionals new to the
+            cybersecurity space. Site design is based around a dark theme, namely, the Moonfly color scheme
+            (https://github.com/bluz71/vim-moonfly-colors), and the modular site design is based around that found in
+            other cybersecurity educational sites.</p>
+        </aside>
+      </section>
+
+      <section class="feature-strip">
+        <article class="feature-card">
+          <span class="feature">Stage 0</span>
+          <h3>Recon and Payload Design</h3>
+          <p>Information gathering to advance the attacker's understanding of their target. Reveals entry points around
+            which the attackers design their payload, i.e. what they wish to use to attack their target.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature">Stage 1</span>
+          <h3>Delivery, Exploitation, and Execution</h3>
+          <p>How an attacker sends the payload they designed to their target and triggers it once received by the
+            target.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature">Stage 2</span>
+          <h3>Command and Control (C2) and Further Actions</h3>
+          <p>The attacker runs commands after gaining control, establishes control over the target, and moves towards
+            objectives.</p>
+        </article>
+      </section>
+
+      <section class="stacked-layout">
+
+        <article class="content-card">
+          <h3>Steps of a Cyberattack</h3>
+          <div class="timeline-grid">
+            <div class="timeline-item"><strong>0</strong><span>Recon</span></div>
+            <div class="timeline-item"><strong>1</strong><span>Weaponization</span></div>
+            <div class="timeline-item"><strong>2</strong><span>Delivery</span></div>
+            <div class="timeline-item"><strong>3</strong><span>Exploitation</span></div>
+            <div class="timeline-item"><strong>4</strong><span>Installation</span></div>
+            <div class="timeline-item"><strong>5</strong><span>Command and Control</span></div>
+            <div class="timeline-item"><strong>6</strong><span>Actions on Objectives</span></div>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <h3>Ethical Disclaimer</h3>
+          <p>This project is in no way meant to provide attack instructions. We want to help people new to the
+            cybersecurity space recognize how adversaries think so they can better detect, prevent, and respond to
+            malicious activity.</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <strong>The Cyber Kill Chain</strong>
+        <p class="small-note">Educational material designed to explain how cyberattacks progress from recon
+          to exploitation to actions on objectives, walking through each step of a typical attacker's agenda.</p>
+      </div>
+      <div>
+        <strong>Site Footer</strong>
+        <p class="small-note">Contact: info@cyber-kill-chain.com<br>Copyright ©2026 Cyber Kill Chain</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
