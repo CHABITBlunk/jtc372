@@ -1,14 +1,14 @@
 :root {
   --bg: #080808;
-  --line: #ae81ff;
+  --line: #cf87e8;
   --text: #e4e4e4;
   --text-soft: #c6c6c6;
   --heading: #e4e4e4;
   --accent: #80a0ff;
   --accent-2: #ae81ff;
   --warning: #ff5d5d;
-  --shadow: 0 22px 60px (0, 0, 0, 0.38);
-  --shadow-hover: 0 28px 72px (0, 0, 0, 0.48);
+  --shadow: 0 22px 60px #080808;
+  --shadow-hover: 0 28px 72px #080808;
   --max-width: 1380px;
 }
 
@@ -24,6 +24,7 @@ body {
   margin: 0;
   font-family: Ubuntu, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
+  background: var(--bg);
   min-height: 100vh;
   line-height: 1.7;
 }
@@ -32,10 +33,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(var(--text) 1px, transparent 1px),
-    linear-gradient(90deg, var(--text) 1px, transparent 1px);
-  background-size: 42px 42px;
+  background: var(--bg);
   mask-image: linear-gradient(180deg, var(--bg), transparent 85%);
   pointer-events: none;
   z-index: -1;
@@ -61,8 +59,8 @@ img {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(18px);
-  background: (8, 14, 25, 0.78);
-  border-bottom: 1px solid var(--accent);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
 }
 
 .nav-wrap {
@@ -89,9 +87,8 @@ img {
   height: 44px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--accent), #cf87e8);
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
@@ -164,7 +161,6 @@ img {
 .site-nav a {
   color: var(--text-soft);
   padding: 0.58rem 0.68rem;
-  border-radius: 999px;
   font-size: 0.86rem;
   transition: 0.2s ease;
   border: 1px solid transparent;
@@ -174,8 +170,8 @@ img {
 .site-nav a:hover,
 .site-nav a.active {
   color: var(--heading);
-  background: (125, 211, 252, 0.08);
-  border-color: (125, 211, 252, 0.12);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-2);
 }
 
 .hero {
@@ -206,7 +202,7 @@ img {
 .content-card,
 .sidebar-card,
 .feature-card {
-  background: linear-gradient(180deg, (15, 27, 45, 0.95), var(--bg));
+  background: var(--bg);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   transition:
@@ -227,7 +223,6 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, (61, 217, 200, 0.04), transparent 38%, var(--accent-2) 100%);
   pointer-events: none;
 }
 
@@ -242,7 +237,7 @@ img {
   content: "";
   position: absolute;
   inset: -40%;
-  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), (61, 217, 200, 0.16), transparent 22%);
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), var(--bg), transparent 22%);
   opacity: 0;
   transition: opacity 0.28s ease;
   pointer-events: none;
@@ -257,7 +252,7 @@ img {
 .status-list li:hover,
 .mini-panel:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: var(--line);
   box-shadow: var(--shadow-hover);
 }
 
@@ -327,18 +322,11 @@ img {
 }
 
 .button {
-  background: linear-gradient(135deg, #cf87e8, var(--accent));
-  color: #080808;
+  background-color: #cf87e8;
 }
 
 .button:hover {
   transform: translateY(-1px);
-}
-
-.button-ghost {
-  border: 1px solid var(--accent);
-  color: var(--heading);
-  background: (255, 255, 255, 0.03);
 }
 
 .status-list {
@@ -351,7 +339,7 @@ img {
 
 .status-list li {
   padding: 0.9rem 1rem;
-  background: (255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--accent);
   transition:
     transform 0.28s ease,
@@ -427,7 +415,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--accent);
+  color: var(--line);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-weight: 700;
@@ -442,7 +430,6 @@ main {
   height: 9px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 0 18px #cf87e8;
 }
 
 .content-card h2,
@@ -498,7 +485,7 @@ main {
   width: 0.45rem;
   height: 0.45rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: var(--accent-2);
 }
 
 .placeholder-box {
@@ -509,9 +496,7 @@ main {
   text-align: center;
   padding: 1.35rem;
   border: 1px dashed var(--accent);
-  background:
-    linear-gradient(180deg, var(--text), var(--text-soft)),
-    repeating-linear-gradient(45deg, #cf87e8, #cf87e8 12px, transparent 12px, transparent 24px);
+  background: var(--line);
   color: #d2def0;
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 0.92rem;
@@ -524,7 +509,7 @@ main {
 .mini-panel {
   margin-top: 1.25rem;
   padding: 1rem 1rem 1.1rem;
-  background: (255, 255, 255, 0.03);
+  background: var(--bg);
   border: 1px solid var(--accent);
   transition:
     transform 0.28s ease,
@@ -542,8 +527,8 @@ main {
 
 .timeline-item {
   padding: 1rem;
-  border: 1px solid var(--accent);
-  background: (255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  background: var(--bg);
   display: grid;
   gap: 0.35rem;
   min-height: 58px;
@@ -556,7 +541,7 @@ main {
 }
 
 .timeline-item strong {
-  color: var(--accent);
+  color: var(--line);
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 1.05rem;
 }
@@ -589,7 +574,7 @@ main {
 }
 
 .site-footer {
-  border-top: 1px solid var(--accent);
+  border-top: 1px solid var(--line);
   margin-top: 4rem;
 }
 
@@ -662,7 +647,6 @@ main {
     gap: 0.5rem;
     margin-top: 0.85rem;
     padding: 0.85rem;
-    background: (12, 21, 36, 0.96);
     border: 1px solid var(--accent);
     white-space: normal;
   }
