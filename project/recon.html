@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cyber Kill Chain educational website page about the cyber killchain.">
+  <title>The Cyber Kill Chain | Recon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CKC</span>
+        <span class="brand-text">
+          <strong>Cyber Kill Chain</strong>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="recon.html">Recon</a>
+        <a href="weaponization.html">Weaponization</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="exploitation.html">Exploitation</a>
+        <a href="installation.html">Installation</a>
+        <a href="command-control.html">Command &amp; Control</a>
+        <a href="actions-on-objectives.html">Actions on Objectives</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="site-shell hero-shell">
+      <div class="hero-panel">
+        <h1>Step 0: Recon</h1>
+        <h2>What Recon Entails</h2>
+        <p>Before launching any attack, adversaries gather intelligence on their target. This falls into two categories:
+          passive recon, i.e. browsing public websites, scraping LinkedIn, reading job postings, and using WHOIS
+          lookups; and active recon, which involves directly probing systems through port scanning and banner grabbing.
+          Social media is a goldmine for attackers, with employees often unknowingly revealing technology stacks, org
+          structures, and internal processes. Defenders can limit exposure through regular external attack surface
+          assessments, employee awareness training, and minimizing publicly visible technical detail. </p>
+      </div>
+      <aside class="hero-side-panel">
+        <div>
+          <img src="images/recon.png"
+            alt="Image of someone using their computer to look up publicly available information as a part of open-source intelligence.">
+          <p></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <div class="site-shell">
+
+      <section class="page-grid" aria-labelledby="site-overview-heading">
+        <article class="content-card">
+          <h3>Passive Recon (OSINT)</h3>
+          <p>Passive recon, often referred to as open-source intelligence (OSINT), manifests in various forms, all
+            revolving around gathering information that is publicly available. This can include:</p>
+          <ul>
+            <li>Google dorking, i.e. using a search engine to display certain sites</li>
+            <li>Checking public records</li>
+            <li>Monitoring activity on social media</li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <h3>Active Recon</h3>
+          <p>Active recon, as opposed to passive recon, requires a more active approach. Tools like packet sniffers are
+            used to scrape local traffic and try to capture any information over insecure channels.</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <strong>The Cyber Kill Chain</strong>
+        <p class="small-note">Educational material designed to explain how cyberattacks progress from recon
+          to exploitation to actions on objectives, walking through each step of a typical attacker's agenda.</p>
+      </div>
+      <div>
+        <strong>Site Footer</strong>
+        <p class="small-note">Contact: info@cyber-kill-chain.com<br>Copyright ©2026 Cyber Kill Chain</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

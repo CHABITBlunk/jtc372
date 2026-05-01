@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cyber Kill Chain educational website page about the cyber killchain.">
+  <title>The Cyber Kill Chain | Recon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CKC</span>
+        <span class="brand-text">
+          <strong>Cyber Kill Chain</strong>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="recon.html">Recon</a>
+        <a href="weaponization.html">Weaponization</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="exploitation.html">Exploitation</a>
+        <a href="installation.html">Installation</a>
+        <a href="command-control.html">Command &amp; Control</a>
+        <a href="actions-on-objectives.html">Actions on Objectives</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="site-shell hero-shell">
+      <div class="hero-panel">
+        <h1>Step 4: Installation</h1>
+      </div>
+      <aside class="hero-side-panel">
+        <div>
+          <img src="images/installation.png"
+            alt="Image representing installation of a permanent backdoor into the target host  taking place.">
+          <p></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <div class="site-shell">
+
+      <section class="page-grid" aria-labelledby="site-overview-heading">
+        <article class="content-card">
+          <h2>What Installation Entails</h2>
+          <p>
+            Exploitation gives access; installation makes it last. Attackers establish persistence so their foothold
+            survives reboots and remediation attempts. Common mechanisms include Remote Access Trojans (RATs) disguised
+            as
+            legitimate processes, rootkits that hide at the kernel level, and web shells uploaded to compromised servers
+            for browser-based command access. Attackers also achieve persistence through rogue user accounts, modified
+            scheduled tasks, altered startup scripts, and Windows registry auto-run keys. Defenders should deploy
+            endpoint
+            detection and response (EDR) tools, monitor system integrity, and regularly audit scheduled tasks, startup
+            items, and user accounts for unauthorized changes.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <!--TODO: change the content in this article-->
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <strong>The Cyber Kill Chain</strong>
+        <p class="small-note">Educational material designed to explain how cyberattacks progress from recon
+          to exploitation to actions on objectives, walking through each step of a typical attacker's agenda.</p>
+      </div>
+      <div>
+        <strong>Site Footer</strong>
+        <p class="small-note">Contact: info@cyber-kill-chain.com<br>Copyright ©2026 Cyber Kill Chain</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
