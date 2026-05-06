@@ -42,6 +42,15 @@
     <div class="site-shell hero-shell">
       <div class="hero-panel">
         <h1>Step 5: Command and Control (C2)</h1>
+        <h2>What Command and Control Entail</h2>
+        <p>With persistence established, attackers need a communication channel to issue commands and receive data.
+          Modern C2 infrastructure is sophisticated: Domain Generation Algorithms (DGAs) produce rotating domain names
+          to evade blocking, while legitimate platforms like Slack, GitHub, and Google Drive are increasingly abused
+          to blend malicious traffic with normal activity. Attackers favor HTTPS for encryption and DNS tunneling to
+          move data through rarely-inspected protocols. Beacon intervals are randomized to defeat anomaly detection.
+          Defenders counter C2 through network traffic analysis, DNS monitoring, TLS inspection, and threat
+          intelligence feeds that flag known malicious infrastructure.
+        </p>
       </div>
       <aside class="hero-side-panel">
         <div>
@@ -58,19 +67,23 @@
 
       <section class="page-grid" aria-labelledby="site-overview-heading">
         <article class="content-card">
-          <h2>What Command and Control Entail</h2>
-          <p>With persistence established, attackers need a communication channel to issue commands and receive data.
-            Modern C2 infrastructure is sophisticated: Domain Generation Algorithms (DGAs) produce rotating domain names
-            to evade blocking, while legitimate platforms like Slack, GitHub, and Google Drive are increasingly abused
-            to blend malicious traffic with normal activity. Attackers favor HTTPS for encryption and DNS tunneling to
-            move data through rarely-inspected protocols. Beacon intervals are randomized to defeat anomaly detection.
-            Defenders counter C2 through network traffic analysis, DNS monitoring, TLS inspection, and threat
-            intelligence feeds that flag known malicious infrastructure.
-          </p>
+          <h3>Methods of Command and Control</h3>
+          <ul>
+            <li>Telnet</li>
+            <li>Internet relay chat (IRC)</li>
+            <li>Domain generation algorithms (DGAs)</li>
+            <li>Legitimate activity intersparsed with malicious activity</li>
+          </ul>
         </article>
 
         <article class="content-card">
-          <!--TODO: change the content in this article-->
+          <h3>How to Defend Against Malicious Command and Control</h3>
+          <ul>
+            <li>Traffic analysis</li>
+            <li>DNS monitoring</li>
+            <li>TLS inspection</li>
+            <li>Heuristic threat detection systems</li>
+          </ul>
         </article>
       </section>
 

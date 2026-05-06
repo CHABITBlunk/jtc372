@@ -42,6 +42,15 @@
     <div class="site-shell hero-shell">
       <div class="hero-panel">
         <h1>Step 6: Actions on Objectives</h1>
+        <h2>What Actions on Objectives Entail</h2>
+        <p>This is what the attacker came for. Objectives vary by motivation: espionage operations focus on data
+          exfiltration, carefully staging and slowly moving sensitive files to avoid triggering data loss prevention
+          tools. Ransomware operators disable backups, escalate to domain administrator, and often exfiltrate data
+          before encrypting it, enabling double extortion. Destructive attacks deploy wiper malware to permanently
+          destroy systems. In all cases, lateral movement is critical, with attackers pivoting across the network
+          using techniques like Pass-the-Hash and Kerberoasting to reach high-value targets. Strong detection,
+          segmentation, and incident response can stop attackers even at this late stage.
+        </p>
       </div>
       <aside class="hero-side-panel">
         <div>
@@ -58,19 +67,24 @@
 
       <section class="page-grid" aria-labelledby="site-overview-heading">
         <article class="content-card">
-          <h2>What Actions on Objectives Entail</h2>
-          <p>This is what the attacker came for. Objectives vary by motivation: espionage operations focus on data
-            exfiltration, carefully staging and slowly moving sensitive files to avoid triggering data loss prevention
-            tools. Ransomware operators disable backups, escalate to domain administrator, and often exfiltrate data
-            before encrypting it, enabling double extortion. Destructive attacks deploy wiper malware to permanently
-            destroy systems. In all cases, lateral movement is critical, with attackers pivoting across the network
-            using techniques like Pass-the-Hash and Kerberoasting to reach high-value targets. Strong detection,
-            segmentation, and incident response can stop attackers even at this late stage.
-          </p>
+          <h3>Common Actions on Objectives</h3>
+          <ul>
+            <li>Lateral movement to other hosts on the network</li>
+            <li>Data deletion</li>
+            <li>Data theft</li>
+            <li>Data encryption</li>
+            <li>Setting up and executing malicious code</li>
+          </ul>
         </article>
 
         <article class="content-card">
-          <!--TODO: change the content in this article-->
+          <h3>How to Defend</h3>
+          <ul>
+            <li>Detection of malicious activity</li>
+            <li>Intrusion detection systems (IDS)</li>
+            <li>Segmentation and isolation of compromised machines</li>
+            <li>Incident response</li>
+          </ul>
         </article>
       </section>
 

@@ -42,11 +42,21 @@
     <div class="site-shell hero-shell">
       <div class="hero-panel">
         <h1>Step 4: Installation</h1>
+        <h2>What Installation Entails</h2>
+        <p>
+          Exploitation gives access; installation makes it last. Attackers establish persistence so their foothold
+          survives reboots and remediation attempts. Common mechanisms include Remote Access Trojans (RATs) disguised
+          as legitimate processes, rootkits that hide at the kernel level, and web shells uploaded to compromised
+          servers for browser-based command access. Attackers also achieve persistence through rogue user accounts,
+          modified scheduled tasks, altered startup scripts, and Windows registry auto-run keys. Defenders should deploy
+          endpoint detection and response (EDR) tools, monitor system integrity, and regularly audit scheduled tasks,
+          startup items, and user accounts for unauthorized changes.
+        </p>
       </div>
       <aside class="hero-side-panel">
         <div>
           <img src="images/installation.png"
-            alt="Image representing installation of a permanent backdoor into the target host  taking place.">
+            alt="Image representing installation of a permanent backdoor into the target host taking place.">
           <p></p>
         </div>
       </aside>
@@ -58,22 +68,27 @@
 
       <section class="page-grid" aria-labelledby="site-overview-heading">
         <article class="content-card">
-          <h2>What Installation Entails</h2>
-          <p>
-            Exploitation gives access; installation makes it last. Attackers establish persistence so their foothold
-            survives reboots and remediation attempts. Common mechanisms include Remote Access Trojans (RATs) disguised
-            as
-            legitimate processes, rootkits that hide at the kernel level, and web shells uploaded to compromised servers
-            for browser-based command access. Attackers also achieve persistence through rogue user accounts, modified
-            scheduled tasks, altered startup scripts, and Windows registry auto-run keys. Defenders should deploy
-            endpoint
-            detection and response (EDR) tools, monitor system integrity, and regularly audit scheduled tasks, startup
-            items, and user accounts for unauthorized changes.
-          </p>
+          <h3>Common Methods/Tools for Installation</h3>
+          <ul>
+            <li>Backdoors</li>
+            <li>Remote access trojans (RATs)</li>
+            <li>Rootkits (pieces of software that allow to run programs as root)</li>
+            <li>Modified scheduled tasks</li>
+          </ul>
         </article>
 
         <article class="content-card">
-          <!--TODO: change the content in this article-->
+          <h3>How to Prevent Installation</h3>
+          <ul>
+            <li>Endpoint detection and response (EDR) tools</li>
+            <li>System integrity monitors</li>
+            <li>Regular auditing:
+              <ul>
+                <li>Tasks</li>
+                <li>Startup items</li>
+                <li>User accounts</li>
+              </ul>
+          </ul>
         </article>
       </section>
 
